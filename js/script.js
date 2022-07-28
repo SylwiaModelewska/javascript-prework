@@ -11,9 +11,9 @@ buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); }
  //Funkcja wywoływana przy kliknięciu w button
  
 function buttonClicked(argButtonName) {
+  
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-
 
    // Funkcja przypisująca nazwę wybranego argumentu do wybranej liczby
 
@@ -51,12 +51,10 @@ function buttonClicked(argButtonName) {
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   }
 
-  var computerMove;
-
   const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
 
-  computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
 
   const playerMove = argButtonName;
