@@ -1,6 +1,8 @@
-var buttonRock, buttonPaper, buttonScissors;
+var buttonPaper, buttonScissors;
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
+
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
@@ -64,6 +66,5 @@ displayResult(playerMove, computerMove);
 
 }
 
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
