@@ -11,7 +11,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+  var computerMove, playerMove, randomNumber;
 
 /**
  * Funkcja przypisująca nazwę wybranego argumentu do wybranej liczby
